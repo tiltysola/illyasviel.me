@@ -1,0 +1,241 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+body{
+    perspective: 30px;
+    opacity: 0;
+    background-image: url('../images/bg.png');
+    background-attachment: fixed;
+    background-position: top left;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 100vh;
+    user-select: none;
+}
+.body_slide_in{
+    opacity: 1;
+    transition: opacity 2.5s ease-out;
+}
+.wrap{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.main{
+    width: 480px;
+    padding: 0 12px;
+    background-color: rgba(255, 255, 255, 0.6);
+    border-radius: 2px;
+    box-shadow: 0 0 20px rgb(255, 255, 255);
+    transition: box-shadow .2s;
+    font-family: 'Blazed';
+}
+.main:hover{
+    box-shadow: 0 0 20px rgb(216, 216, 216);
+    transition: box-shadow .2s;
+}
+.avatar_box{
+    text-align: center;
+    margin-top: 24px;
+    border-bottom: 1px solid rgba(64, 64, 64, 0.6);
+}
+.avatar{
+    width: 128px;
+    height: 128px;
+    border-radius: 128px;
+    transition: box-shadow .5s;
+}
+.avatar:hover{
+    box-shadow: 0 0 20px rgb(128, 128, 128);
+    transition: box-shadow .5s;
+}
+.nickname_box{
+    text-align: center;
+    margin-top: 3px;
+    margin-bottom: 20px;
+}
+.nickname{
+    font-size: 20px;
+    color: rgb(216, 32, 196);
+    text-decoration: none;
+    transition: color .5s;
+}
+.nickname:hover{
+    color: rgb(106, 102, 196);
+    transition: color .5s;
+}
+.follow_box{
+    text-align: center;
+    margin-top: 18px;
+    margin-bottom: 12px;
+    border-bottom: 1px solid rgba(64, 64, 64, 0.6);
+}
+.follow_head{
+    font-size: 32px;
+    color: rgb(16, 16, 16);
+    text-decoration: none;
+    transition: color .5s;
+}
+.follow_main{
+    margin-top: 12px;
+    margin-bottom: 10px;
+    display: flex;
+    justify-content: center;
+}
+.follow_zou{
+    display: inline-block;
+    width: 64px;
+    height: 64px;
+    margin: 0 8px;
+    border-radius: 64px;
+    transition: box-shadow .5s;
+    font-size: 32px;
+    color: rgb(0, 0, 0);
+    line-height: 64px;
+}
+.follow_zou:hover{
+    background-color: rgba(255, 255, 255, 0.6);
+    box-shadow: 0 0 20px rgb(128, 128, 128);
+    transition: box-shadow .5s;
+}
+.follow_g41{
+    display: inline-block;
+    width: 52px;
+    height: 52px;
+    padding: 4px 6px 8px 6px;
+    margin: 0 8px;
+    border-radius: 64px;
+    transition: box-shadow .5s;
+}
+.follow_g41:hover{
+    background-color: rgba(255, 255, 255, 0.6);
+    box-shadow: 0 0 20px rgb(128, 128, 128);
+    transition: box-shadow .5s;
+}
+.follow_github{
+    display: inline-block;
+    width: 64px;
+    height: 64px;
+    margin: 0 8px;
+    border-radius: 64px;
+    transition: box-shadow .5s;
+}
+.follow_github:hover{
+    background-color: rgba(255, 255, 255, 0.6);
+    box-shadow: 0 0 20px rgb(128, 128, 128);
+    transition: box-shadow .5s;
+}
+.fa-github{
+    font-size: 48px;
+    line-height: 64px;
+    color: rgb(0, 0, 0);
+}
+.follow_git{
+    display: inline-block;
+    width: 64px;
+    height: 64px;
+    margin: 0 8px;
+    border-radius: 64px;
+    transition: box-shadow .5s;
+}
+.follow_git:hover{
+    background-color: rgba(255, 255, 255, 0.6);
+    box-shadow: 0 0 20px rgb(128, 128, 128);
+    transition: box-shadow .5s;
+}
+.fa-git{
+    font-size: 36px;
+    line-height: 64px;
+    color: rgb(0, 0, 0);
+}
+.follow_mail{
+    display: inline-block;
+    width: 64px;
+    height: 64px;
+    margin: 0 8px;
+    border-radius: 64px;
+    transition: box-shadow .5s;
+}
+.follow_mail:hover{
+    background-color: rgba(255, 255, 255, 0.6);
+    box-shadow: 0 0 20px rgb(128, 128, 128);
+    transition: box-shadow .5s;
+}
+.fa-envelope-o{
+    font-size: 36px;
+    line-height: 64px;
+    color: rgb(0, 0, 0);
+}
+.footer{
+    text-align: center;
+}
+.footer_mail{
+    display: inline-block;
+    margin: 8px 0 20px 0;
+    text-decoration: none;
+    color: rgb(0, 0, 0);
+}
+.rightbar{
+    position: fixed;
+    right: -96px;
+    width: 84px;
+    text-align: center;
+    padding: 12px 0;
+    background-color: rgba(255, 255, 255, 0.6);
+    border-radius: 2px;
+    box-shadow: 0 0 20px rgb(255, 255, 255);
+    transition: box-shadow .2s;
+    font-family: 'Blazed';
+}
+.rightbar:hover{
+    box-shadow: 0 0 20px rgb(216, 216, 216);
+    transition: box-shadow .2s;
+}
+.rightbar a{
+    display: inline-block;
+    margin: 6px 0;
+}
+.rightbar_slide_in{
+    right: 12px;
+    transition: right 1.5s ease-in-out;
+}
+.rightbar_slide_out{
+    right: -96px;
+    transition: right 1.5s ease-in-out;
+}
+.right_flink{
+    text-align: center;
+    font-size: 12px;
+    margin: 6px 0;
+}
+.right_mango{
+    display: inline-block;
+    width: 64px;
+    height: 64px;
+    margin: 0 8px;
+    border-radius: 64px;
+    transition: box-shadow .5s;
+    font-size: 32px;
+    color: rgb(0, 0, 0);
+    line-height: 64px;
+}
+.right_mango:hover{
+    background-color: rgba(255, 255, 255, 0.6);
+    box-shadow: 0 0 20px rgb(128, 128, 128);
+    transition: box-shadow .5s;
+}
+#landlord{
+    user-select: none;
+    position: fixed;
+    right: 30px;
+    bottom: 0;
+    width: 280px;
+    height: 250px;
+    z-index: 99;
+    font-size: 0;
+    transition: all .3s ease-in-out;
+}
+#live2d{
+    position:relative;
+}
